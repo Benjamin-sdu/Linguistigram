@@ -1,0 +1,27 @@
+site_name: "Project Documentation"
+site_url: "https://jonathank1906.github.io/Web-Technologies-Project"
+repo_url: "https://github.com/jonathank1906/Web-Technologies-Project"
+
+theme:
+  name: shadcn
+  icon: null
+  show_stargazers: false
+  pygments_style:
+    light: shadcn-light
+    dark: github-dark
+  icon: heroicons:rocket-launch
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - fenced_code
+  - shadcn.extensions.codexec
+  - pymdownx.blocks.tab
+
+nav:
+  - Home: index.md
+  - Setup Guide: setup.md
+

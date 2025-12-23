@@ -1,0 +1,57 @@
+/* =============================
+   Custom Styling for Tom Select
+   ============================= */
+
+
+.ts-control {
+  @apply border border-base-100 bg-base-300 rounded-lg transition duration-150 ease-out;
+}
+
+.ts-wrapper.focus .ts-control {
+  @apply ring-2 ring-indigo-600 outline-none;
+}
+
+.ts-wrapper.focus .ts-control,
+.ts-wrapper.has-items .ts-control {
+  @apply rounded-lg;
+}
+
+.ts-wrapper .ts-control .item {
+  @apply !bg-base-200 !text-base-content !border-base-100 !rounded-md text-sm px-2 py-1 mr-1 mb-1;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+.ts-wrapper.plugin-remove_button .item .remove {
+  @apply !border-none font-bold leading-none p-1.5;
+}
+
+.ts-dropdown {
+  @apply border border-base-100 bg-base-300 rounded-lg shadow-sm shadow-gray-600 mt-1.5 z-50;
+}
+
+.ts-wrapper .option {
+  @apply text-base-content cursor-pointer;
+}
+
+.ts-dropdown .option:hover,
+.ts-dropdown .active,
+.ts-dropdown .create:hover {
+  @apply bg-base-100;
+}
+
+.ts-dropdown [data-selectable].option:first-child {
+  @apply rounded-t-md;
+}
+
+.ts-dropdown [data-selectable].option:last-child {
+  @apply rounded-b-md;
+}
+
+.ts-wrapper.multi .ts-control > div {
+  @apply p-1
+}
+
+.ts-wrapper.full .ts-control {
+  @apply bg-base-300 !important;
+}
